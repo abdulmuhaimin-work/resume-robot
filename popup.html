@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Robot</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      margin: 5px 0;
+      padding: 8px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 10px;
+      padding: 5px;
+      border-radius: 4px;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <input type="file" id="resumeFileInput" accept=".pdf,.doc,.docx">
+  <button id="uploadResume">Upload Resume</button>
+  <button id="connectLinkedIn">Connect to LinkedIn</button>
+  <button id="toggleAutoFill" disabled>Enable Auto-fill</button>
+  <button id="testFill">Test Fill Form</button>
+  <div id="status">Status: Ready</div>
+  <script src="dist/popup.bundle.js"></script>
+</body>
+</html> 
